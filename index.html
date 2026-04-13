@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | Joel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">JOEL</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/150/2ecc71/ffffff?text=Joel" alt="Foto de Perfil de Joel">
+                </div>
+                <h1>Olá, eu sou o <span>Joel!</span></h1>
+                <p>Desenvolvedor Full Stack Web</p>
+                <a href="#about" class="btn">Saiba Mais <i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <p>Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Com foco em tecnologias modernas como HTML5, CSS3, JavaScript e React, busco sempre entregar soluções eficientes e visualmente atraentes. Atualmente cursando Tecnologia em Sistemas para Internet, estou em constante aprendizado para dominar as melhores práticas do mercado.</p>
+                
+                <div class="skills">
+                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="skill-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                    <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div id="project-grid" class="project-grid">
+                    <!-- Projetos serão renderizados dinamicamente via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Joel &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
