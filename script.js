@@ -1,28 +1,21 @@
 const projects = [
     {
-        titulo: "E-commerce Full Stack",
+        titulo: "Projeto 1",
         descricao: "Plataforma completa com carrinho de compras, autenticação de usuários e integração com gateway de pagamento (Stripe).",
         img: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         link: "https://github.com/joeltcl94-art/ecommerce-fullstack",
         tags: ["React", "Node.js", "MongoDB"]
     },
     {
-        titulo: "Dashboard de Gestão Financeira",
+        titulo: "Projeto 2 React",
         descricao: "Sistema para controle de receitas e despesas com gráficos interativos e relatórios exportáveis em PDF.",
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         link: "https://github.com/joeltcl94-art/finance-dashboard",
         tags: ["TypeScript", "Next.js", "PostgreSQL"]
-    },
-    {
-        titulo: "Rede Social para Desenvolvedores",
-        descricao: "Aplicação para compartilhamento de snippets de código, fórum de discussões e chat em tempo real via WebSockets.",
-        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-        link: "https://github.com/joeltcl94-art/dev-social-network",
-        tags: ["React Native", "Firebase", "Socket.io"]
     }
 ];
 
-function renderProjects() {
+function renderProjects( ) {
     const projectGrid = document.getElementById('project-grid');
     if (!projectGrid) return;
 
