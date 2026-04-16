@@ -7,7 +7,7 @@ const projects = [
         tags: ["React", "Node.js", "MongoDB"]
     },
     {
-        titulo: "Projeto 2 React",
+        titulo: "Projeto React",
         descricao: "Sistema para controle de receitas e despesas com gráficos interativos e relatórios exportáveis em PDF.",
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         link: "https://github.com/joeltcl94-art/finance-dashboard",
@@ -15,9 +15,11 @@ const projects = [
     }
 ];
 
+
 function renderProjects( ) {
     const projectGrid = document.getElementById('project-grid');
     if (!projectGrid) return;
+
 
     projectGrid.innerHTML = projects.map(project => `
         <div class="project-card">
@@ -34,8 +36,10 @@ function renderProjects( ) {
     `).join('');
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
+
 
     // Smooth scroll para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -51,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     // Efeito de transparência no header ao rolar
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
@@ -65,3 +70,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
